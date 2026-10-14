@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Kaarigar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Kaarigar</a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" aria-current="page">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section detail">
+      <img src="images/p1.svg" alt="Indigo Block-Print Tote">
+      <div class="detail-info">
+        <h1>Indigo Block-Print Tote</h1>
+        <p class="price price-lg">&#8377;649</p>
+        <p>Hand-stamped cotton tote with reinforced handles. Made from 100% cotton, block-printed with natural indigo dye. Fits a laptop and a water bottle.</p>
+        <ul class="specs">
+          <li>Size: 38 cm x 40 cm</li>
+          <li>Material: Cotton canvas</li>
+          <li>Care: Hand wash in cold water</li>
+        </ul>
+        <div class="qty-row">
+          <label for="qty">Quantity</label>
+          <input type="number" id="qty" name="qty" min="1" max="10" value="1">
+        </div>
+        <button type="button" class="btn btn-accent">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Kaarigar</strong>
+        <p>Handmade goods from Indian artisans.</p>
+      </div>
+      <address>
+        <p>Email: <a href="mailto:hello@kaarigar.example">hello@kaarigar.example</a></p>
+        <p>Phone: +91 98765 43210</p>
+        <p>12 Craft Lane, Meerut, Uttar Pradesh 250001</p>
+      </address>
+      <p class="copyright">&copy; 2026 Kaarigar. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

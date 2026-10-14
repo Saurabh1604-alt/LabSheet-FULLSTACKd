@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Kaarigar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Kaarigar</a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html" aria-current="page">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Checkout</h1>
+      <form class="checkout-form" action="#" method="post">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" rows="3" required autocomplete="street-address"></textarea>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required autocomplete="address-level2">
+          </div>
+          <div class="field">
+            <label for="pincode">Pincode</label>
+            <input type="text" id="pincode" name="pincode" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required autocomplete="postal-code">
+          </div>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required autocomplete="tel-national">
+        </div>
+        <fieldset class="payment">
+          <legend>Payment method</legend>
+          <label><input type="radio" name="payment" value="upi" checked> UPI</label>
+          <label><input type="radio" name="payment" value="card"> Credit / debit card</label>
+          <label><input type="radio" name="payment" value="cod"> Cash on delivery</label>
+        </fieldset>
+        <button type="submit" class="btn btn-accent btn-block">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Kaarigar</strong>
+        <p>Handmade goods from Indian artisans.</p>
+      </div>
+      <address>
+        <p>Email: <a href="mailto:hello@kaarigar.example">hello@kaarigar.example</a></p>
+        <p>Phone: +91 98765 43210</p>
+        <p>12 Craft Lane, Meerut, Uttar Pradesh 250001</p>
+      </address>
+      <p class="copyright">&copy; 2026 Kaarigar. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
